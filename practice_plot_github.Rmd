@@ -12,9 +12,8 @@ library(tidyverse)
 
 ```{r}
 ggplot(iris, aes(x=Sepal.Length)) +
-  geom_histogram() -> practice_plot
+  geom_histogram(fill = 'firebrick') -> practice_plot
 
 ggsave("practice_plot.png", practice_plot)
 
 ```
-
